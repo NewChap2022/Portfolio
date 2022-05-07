@@ -1,0 +1,29 @@
+:root {
+    --first-color: #388087;
+    --second-color: #6FB3B8;
+    --third-color: #BADFE7;
+    --forth-color: #C2EDCE;
+    --fifth-color: #F6F6F2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+
+}
+
+@media screen and (min-width: 570px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 992px) {
+}
+
+@media screen and (min-width: 1200px) {
+}
