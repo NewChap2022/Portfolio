@@ -1,6 +1,6 @@
 :root {
     --first-color: #51653C;
-    --second-color:#F1E86F;
+    --second-color: #F1E86F;
     --third-color: #F0E4B0;
     --forth-color: #F0F1B8;
     --fifth-color: #525C37;
@@ -19,7 +19,7 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
     background-color: var(--first-color);
 }
 
@@ -38,7 +38,7 @@ header h1 {
 }
 
 header h1 a span {
-    color:var(--forth-color);
+    color: var(--forth-color);
 }
 
 header nav {
@@ -52,11 +52,11 @@ header nav ul {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    align-items:center;
+    align-items: center;
 }
 
 header nav ul li a {
-    margin:5px;
+    margin: 5px;
     padding: 5px;
     font-weight: bold;
     font-size: 25px;
@@ -75,7 +75,7 @@ header nav ul li a:hover {
     height: auto;
     background-position: 0 40%;
     display: flex;
-    align-items: center;
+    align-items: center
 }
 
 .hero h2 {
@@ -89,46 +89,146 @@ header nav ul li a:hover {
 
 .self-intro {
     background-color: var(--forth-color);
+}
+
+.self-intro h2 {
+    color: var(--first-color);
+}
+
+.my-info {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
 }
 
-.my-image {
-    display: flex;
-    flex-direction: column;
-    max-width: 30%;
-}
-
-.my-image h2 {
-    color: var(--first-color);
+.section-title {
     text-align: center;
     margin: 5px;
-    padding: 5px;   
+    padding: 5px;
+    overflow-wrap: break-word;
+    font-size: 35px;
+}
+
+.my-image {
+    max-width: 250px;  
+    min-width: 150px;  
 }
 
 .my-image img {
-    max-width: 300px;
-    margin: 5px;
-    padding: 5px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
     border: 5px dotted var(--fifth-color);
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
-.self-intro p {
+.my-info p {
+    width: 60%;
     margin: 5px;
     padding: 5px;
     font-size: 20px;
-    
-}
-@media screen and (min-width: 570px) {
+    color: var(--fifth-color);
 }
 
-@media screen and (min-width: 768px) {
+.applications {
+    background-color: var(--fifth-color);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: auto;
 }
 
-@media screen and (min-width: 992px) {
+.applications h2 {
+    color: var(--third-color);
 }
 
-@media screen and (min-width: 1200px) {
+.apps {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
+.app-1,
+.rest-apps {
+    border: 15px ridge var(--third-color);
+    position: relative;
+    cursor: pointer;
+}
+
+.app-1 {
+    width: 320px;
+    height: 320px;
+    margin: 20px;
+}
+
+.work-link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.app-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(5px)
+}
+
+.app-1:hover img,
+.rest-apps:hover img {
+    filter: none;
+}
+
+.work-name {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    display: inline-table;
+    color: var(--first-color);
+    font-family: cursive;
+    font-size: 22px;
+    background-color: var(--third-color);
+    padding: 2%;
+}
+
+.other-apps {
+    height: 400px;
+    display: flex;
+}
+
+.rest-apps {
+    width: 160px;
+    height: 160px;
+    margin: 10px;
+}
+
+.contact {
+    background-color: var(--third-color);
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact h2,
+.contact p {
+    color: var(--fifth-color);
+}
+
+.contact p {
+    font-size: 20px;
+}
+
+@media screen and (min-width: 570px) {}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 992px) {}
+
+@media screen and (min-width: 1200px) {}
