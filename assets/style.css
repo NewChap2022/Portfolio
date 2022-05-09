@@ -1,3 +1,4 @@
+/* variables for colours */
 :root {
     --first-color: #51653C;
     --second-color: #F1E86F;
@@ -6,6 +7,7 @@
     --fifth-color: #525C37;
 }
 
+/* styling for whole page start */
 * {
     margin: 0;
     padding: 0;
@@ -15,6 +17,8 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+/* styling for whole page end */
 
 header {
     display: flex;
@@ -29,7 +33,9 @@ header a {
 
 }
 
-header h1, footer span {
+/* my name shares the same style */
+header h1,
+footer span {
     font-family: "Brush Script MT", "Lucida Handwriting", cursive;
     width: 100%;
     text-align: center;
@@ -63,6 +69,7 @@ header nav ul li a {
     font-size: 25px;
 }
 
+/* hover effect for navigation bar and can make improvements in future */
 header nav ul li a:hover {
     background: var(--third-color);
     color: var(--first-color);
@@ -70,6 +77,7 @@ header nav ul li a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+/* Decision about colors based on https://color.adobe.com/create/color-wheel */
 .hero {
     background-image: url(./images/hero.jpg);
     background-size: cover;
@@ -113,8 +121,8 @@ header nav ul li a:hover {
 }
 
 .my-image {
-    max-width: 250px;  
-    min-width: 150px;  
+    max-width: 250px;
+    min-width: 150px;
 }
 
 .my-image img {
@@ -134,6 +142,7 @@ header nav ul li a:hover {
     text-align: center;
 }
 
+/* use flexboxes to show grid design */
 .applications {
     background-color: var(--fifth-color);
     display: flex;
@@ -160,6 +169,7 @@ header nav ul li a:hover {
     cursor: pointer;
 }
 
+/* Question: are there other ways to decide the size of apps */
 .app-1 {
     width: 320px;
     height: 320px;
@@ -198,7 +208,7 @@ header nav ul li a:hover {
     color: var(--first-color);
     font-family: cursive;
     font-size: 22px;
-    background-color: rgba(240,228,176, 0.5);
+    background-color: rgba(240, 228, 176, 0.5);
     padding: 5%;
 }
 
@@ -232,7 +242,9 @@ header nav ul li a:hover {
     font-size: 20px;
 }
 
-.email, .github, .linkedin {
+.email,
+.github,
+.linkedin {
     font-size: 20px;
     color: var(--first-color);
     display: flex;
@@ -246,7 +258,7 @@ header nav ul li a:hover {
 }
 
 .logo img {
-    width: 100%;    
+    width: 100%;
 }
 
 footer {
@@ -255,7 +267,7 @@ footer {
     color: var(--third-color)
 }
 
-
+/* media queries to meet responsive needs and breakpoints based bootstrap suggestion */
 @media screen and (min-width: 570px) {
     .logo {
         width: 100px;
@@ -274,7 +286,8 @@ footer {
         align-items: center;
     }
 
-    header h1, header nav {
+    header h1,
+    header nav {
         width: auto;
     }
 
@@ -287,3 +300,9 @@ footer {
     }
 }
 
+@media screen and (min-width: 1200px) {
+    .my-info p {
+        font-size: 30px;
+        text-align: start;
+    }
+}
