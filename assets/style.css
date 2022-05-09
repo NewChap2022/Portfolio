@@ -29,12 +29,13 @@ header a {
 
 }
 
-header h1 {
+header h1, footer span {
     font-family: "Brush Script MT", "Lucida Handwriting", cursive;
     width: 100%;
     text-align: center;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     font-size: 40px;
+    margin: 10px;
 }
 
 header h1 a span {
@@ -56,7 +57,7 @@ header nav ul {
 }
 
 header nav ul li a {
-    margin: 5px;
+    margin: 12px;
     padding: 5px;
     font-weight: bold;
     font-size: 25px;
@@ -74,21 +75,20 @@ header nav ul li a:hover {
     background-size: cover;
     height: auto;
     background-position: 0 40%;
-    display: flex;
-    align-items: center
 }
 
 .hero h2 {
     text-align: center;
     color: var(--third-color);
     background-color: rgba(82, 92, 55, 0.5);
-    margin: 5%;
     padding: 25px;
     font-size: 45px;
 }
 
 .self-intro {
     background-color: var(--forth-color);
+    display: flex;
+    flex-direction: column;
 }
 
 .self-intro h2 {
@@ -104,10 +104,12 @@ header nav ul li a:hover {
 
 .section-title {
     text-align: center;
-    margin: 5px;
+    margin: 20px;
     padding: 5px;
     overflow-wrap: break-word;
     font-size: 35px;
+    border-bottom: 5px dashed;
+    align-self: center;
 }
 
 .my-image {
@@ -129,6 +131,7 @@ header nav ul li a:hover {
     padding: 5px;
     font-size: 20px;
     color: var(--fifth-color);
+    text-align: center;
 }
 
 .applications {
@@ -195,8 +198,8 @@ header nav ul li a:hover {
     color: var(--first-color);
     font-family: cursive;
     font-size: 22px;
-    background-color: var(--third-color);
-    padding: 2%;
+    background-color: rgba(240,228,176, 0.5);
+    padding: 5%;
 }
 
 .other-apps {
@@ -213,11 +216,15 @@ header nav ul li a:hover {
 .contact {
     background-color: var(--third-color);
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
 }
 
-.contact h2,
-.contact p {
+.contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact h2 {
     color: var(--fifth-color);
 }
 
@@ -225,10 +232,58 @@ header nav ul li a:hover {
     font-size: 20px;
 }
 
-@media screen and (min-width: 570px) {}
+.email, .github, .linkedin {
+    font-size: 20px;
+    color: var(--first-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px auto;
+}
 
-@media screen and (min-width: 768px) {}
+.logo {
+    width: 50px;
+}
 
-@media screen and (min-width: 992px) {}
+.logo img {
+    width: 100%;    
+}
 
-@media screen and (min-width: 1200px) {}
+footer {
+    background-color: var(--first-color);
+    text-align: center;
+    color: var(--third-color)
+}
+
+
+@media screen and (min-width: 570px) {
+    .logo {
+        width: 100px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .contact-info {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    header {
+        align-items: center;
+    }
+
+    header h1, header nav {
+        width: auto;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    .my-info p {
+        font-size: 25px;
+    }
+}
+
