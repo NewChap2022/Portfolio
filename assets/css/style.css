@@ -79,7 +79,7 @@ header nav ul li a:hover {
 
 /* Decision about colors based on https://color.adobe.com/create/color-wheel */
 .hero {
-    background-image: url(./images/hero.jpg);
+    background-image: url(../images/hero.jpg);
     background-size: cover;
     height: auto;
     background-position: 0 40%;
