@@ -1,7 +1,7 @@
-# Bootcamp Challenge 2 
+# Creating Portfolio
 ## Objective:
 *create a Professional Portfolio by using HTML and CSS*
-## Challenge 1 Acceptance Criteria:
+## Criteria:
 - [x] The portfolio presents the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
 - [x] When click one of the links in the navigation, the UI scrolls to the corresponding section
 - [x] When click on the link to the section about their work, the UI scrolls to a section with titled images of the developer's applications
